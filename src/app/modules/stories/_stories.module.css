@@ -1,0 +1,8 @@
+.stories {
+  position: relative;
+  padding: 15rem 0;
+
+  @mixin atMedium {
+    padding: 10rem 0;
+  }
+}

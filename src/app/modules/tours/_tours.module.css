@@ -1,0 +1,9 @@
+.tours {
+  background-color: $color-near-white;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
+
+  @mixin atMedium {
+    padding: 20rem 0 10rem 0;
+  }
+}

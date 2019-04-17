@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  height: 85vh;
+  background-image: linear-gradient(to right bottom, color($color-primary-light a(80%)), color($color-primary-dark a(80%))), url("/assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @mixin atSmall {
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  }
+
+  &__text-box {
+    @util center;
+    text-align: center;
+
+    &--pull-up {
+      top: 40%;
+    }
+  }
+}

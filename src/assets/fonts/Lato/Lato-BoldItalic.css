@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Lato-BoldItalic';
+    src: url('Lato-BoldItalic.eot');
+    src: url('Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Lato-BoldItalic.woff2') format('woff2'),
+        url('Lato-BoldItalic.woff') format('woff'),
+        url('Lato-BoldItalic.ttf') format('truetype'),
+        url('Lato-BoldItalic.svg#Lato-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}

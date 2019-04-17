@@ -1,0 +1,10 @@
+.about {
+  background-color: $color-light-gray-1;
+  padding: 20rem 0;
+  /* MOVE TOP */
+  margin-top: -10vh;
+
+  @mixin atMedium {
+    padding: 15rem 0;
+  }
+}

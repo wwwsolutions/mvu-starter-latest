@@ -1,0 +1,26 @@
+.heading-secondary {
+  font-size: 3.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  /* GRADIANT FONT CLIP */
+  background-image: linear-gradient(to right, color($color-primary-light a(80%)), color($color-primary-dark a(80%)));
+  background-clip: text;
+  color: $color-transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  @mixin atMedium {
+    font-size: 3rem;
+  }
+
+  @mixin atSmall {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    transform: skewX(15deg) skewY(2deg);
+    text-shadow: 0.5rem 1rem 2rem color($color-black a(20%));
+  }
+}

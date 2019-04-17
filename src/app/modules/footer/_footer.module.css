@@ -1,0 +1,72 @@
+.footer {
+  background-color: $color-dark-gray;
+  color: $color-silver;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+
+  @mixin atMedium {
+    padding: 8rem 0;
+  }
+
+  &__navigation {
+    display: inline-block;
+    border-top: 1px solid $color-gray;
+    padding-top: 2rem;
+
+    @mixin atMedium {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-silver;
+      background-color: $color-dark-gray;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+      padding: 0 0.225rem;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem 0 color($color-black a(40%));
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+
+  &__copyright {
+    color: inherit;
+    display: inline-block;
+    border-top: 1px solid $color-gray;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+
+    @mixin atMedium {
+      width: 100%;
+      float: none;
+    }
+
+  }
+
+}

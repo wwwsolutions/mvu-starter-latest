@@ -1,0 +1,14 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+*//////////////////////////////////////////////////
+
+const MSGS = {
+  ECOSYSTEM_MESSAGE: 'ECOSYSTEM_MESSAGE',
+  ABOUT_MESSAGE: 'ABOUT_MESSAGE',
+};
+
+export default MSGS;

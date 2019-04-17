@@ -1,0 +1,30 @@
+.logo {
+
+  /* LOGO HEADER */
+  &__header {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  &__header-image {
+    height: 3.5rem;
+  }
+
+  /* LOGO FOOTER */
+  &__footer {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @mixin atMedium {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__footer-image {
+    width: 15rem;
+    height: auto;
+  }
+}
+
+
+
