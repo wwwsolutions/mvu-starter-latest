@@ -6,6 +6,9 @@
 
 *//////////////////////////////////////////////////
 
+// TESTING
+import HERO_LARGE from './modules/hero-large/hero-large.messages.model';
+
 // IMPORT MESSAGES
 import NAVIGATION from './modules/navigation/navigation.messages.model';
 import HEADER from './modules/header/header.messages.model';
@@ -21,6 +24,8 @@ import POPUP from './modules/popup/popup.messages.model';
 
 // AGGREGATE MESSAGES
 const MSGS = {
+  ...HERO_LARGE,
+
   ...NAVIGATION,
   ...HEADER,
   ...ABOUT,

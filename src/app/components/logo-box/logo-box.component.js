@@ -3,13 +3,16 @@ import { h } from 'virtual-dom';
 
 const { div, img } = hh(h);
 
+// COMPONENTS
+import responsiveImage from '../responsive-image/responsive-image.component';
 
 // PUBLIC
-function logoBox(name, logo) {
-  const { src, alt } = logo;
+function logoBox(className, logo) {
 
-  return div({ className: `logo__${name}` }, [
-    img({ className: `logo__${name}-image`, src, alt })
+  const { box, image } = className;
+
+  return div({ className: box }, [
+    responsiveImage(image, logo),
   ]);
 
 }

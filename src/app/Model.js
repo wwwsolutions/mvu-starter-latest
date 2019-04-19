@@ -13,6 +13,9 @@
 // import { breakpoints } from '../presets/responsive/@mobile-first/breakpoints';
 import { breakpoints } from '../presets/responsive/@desktop-first/breakpoints';
 
+// TESTING
+import { heroLargeModel } from './modules/hero-large/hero-large.model';
+
 // IMPORT MODELS
 import { headerModel } from './modules/header/header.model';
 import { navigationModel } from './modules/navigation/navigation.model';
@@ -33,6 +36,8 @@ export const initModel = {
   ...breakpoints,
 
   // MODELS
+  ...heroLargeModel,
+
   ...navigationModel,
   ...headerModel,
   ...aboutModel,

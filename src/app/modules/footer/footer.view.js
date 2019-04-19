@@ -16,14 +16,13 @@ function view(dispatch, model) {
   }, [
 
     // LOGO
-    // logo('footer', { src: '/assets/images/logo-green-2x.png', alt: 'Footer logo' }),
-    logoBox('footer', logo),
+    logoBox({ box: 'footer__logo', image: 'responsive-image footer__logo-image' }, logo),
+
 
     div({ className: 'row' }, [
 
       // COLUMN LEFT
       div({ className: 'col-1-of-2' }, [
-
 
         // FOOTER NAVIGATION
         div({ className: 'footer__navigation' }, [

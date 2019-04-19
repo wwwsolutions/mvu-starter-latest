@@ -20,8 +20,8 @@ function view(dispatch, model) {
     className: 'section header',
   }, [
 
-    // HEADER LOGO
-    logoBox('header', logo),
+    // LOGO
+    logoBox({ box: 'header__logo', image: 'responsive-image header__logo-image' }, logo),
 
     div({ className: 'header__text-box header__text-box--pull-up' }, [
 

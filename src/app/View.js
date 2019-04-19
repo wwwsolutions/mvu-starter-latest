@@ -3,6 +3,9 @@ import { h } from 'virtual-dom';
 
 const { div, main } = hh(h);
 
+// TESTING
+import { heroLargeView } from './modules/hero-large/hero-large.view';
+
 // MODULES/PAGE SECTIONS
 import { navigationView } from './modules/navigation/navigation.view';
 import { headerView } from './modules/header/header.view';
@@ -19,20 +22,22 @@ import { popupView } from './modules/popup/popup.view';
 function view(dispatch, model) {
   return div([
 
-    navigationView(dispatch, model),
+    // TESTING
+    // heroLargeView(dispatch, model),
+
+    // navigationView(dispatch, model),
     headerView(dispatch, model),
 
     main([
-      aboutView(dispatch, model),
-      featuresView(dispatch, model),
-      toursView(dispatch, model),
-      storiesView(dispatch, model),
-      bookingView(dispatch, model),
-
+      // aboutView(dispatch, model),
+      // featuresView(dispatch, model),
+      // toursView(dispatch, model),
+      // storiesView(dispatch, model),
+      // bookingView(dispatch, model),
     ]),
 
     footerView(dispatch, model),
-    popupView(dispatch, model),
+    // popupView(dispatch, model),
 
   ]);
 }

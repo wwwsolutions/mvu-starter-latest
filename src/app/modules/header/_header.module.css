@@ -6,6 +6,16 @@
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  /* LOGO */
+  &__logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  &__logo-image {
+    height: 3.5rem;
+  }
+
   @mixin atSmall {
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   }

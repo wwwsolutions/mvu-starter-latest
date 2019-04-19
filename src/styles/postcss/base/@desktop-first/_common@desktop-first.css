@@ -23,8 +23,4 @@ body {
   @mixin atMedium {
     padding: 0;
   }
-
-  @mixin atHiDpi {
-    background-color: tomato !important;
-  }
 }

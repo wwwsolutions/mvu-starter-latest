@@ -4,6 +4,23 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  /* LOGO */
+  &__logo {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @mixin atMedium {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__logo-image {
+    width: 15rem;
+    height: auto;
+    margin: 0 auto;
+  }
+
+
   @mixin atMedium {
     padding: 8rem 0;
   }
